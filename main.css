@@ -1,0 +1,174 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Gotham Rounded, sans-serif;
+  font-weight: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#472e47), to(#490d49));
+  background: linear-gradient(to right, #472e47, #490d49);
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  min-height: 100vh;
+  -ms-grid-columns: (100px)[4];
+      grid-template-columns: repeat(4, 100px);
+  -ms-grid-rows: minmax(120px, auto) (100px)[5];
+      grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.grid-container > button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid white;
+  outline: none;
+  background-color: rgba(255, 192, 203, 0.75);
+}
+
+.grid-container > button:hover {
+  background-color: rgba(255, 192, 203, 0.9);
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.output {
+  grid-column: 1 / -1;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  /*takes the items from the top to the bottom or left to right of the area*/
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  /*the items are separated and spaced instead of being grouped together*/
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /*items in black space arrange vertically instead of horizontally*/
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+  /*automatically moves to the next line instead of outside the line*/
+}
+
+.output .previous-operand {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.5rem;
+}
+
+.output .current-operand {
+  color: white;
+  font-size: 2.5rem;
+}
+
+/*.space {
+    grid-column: 1 / span 8;
+    grid-row: 1 / span 1;
+}
+
+.ac {
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 1;
+}
+
+.del {
+    grid-column: 5 / span 2;
+    grid-row: 2 / span 1;
+}
+
+.division {
+    grid-column: 7 / span 2;
+    grid-row: 2 / span 1;
+}
+
+.one {
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 1;
+}
+
+.two {
+    grid-column: 3 / span 2;
+    grid-row: 3 / span 1;
+}
+
+.three {
+    grid-column: 5 / span 2;
+    grid-row: 3 / span 1;
+}
+
+.mult {
+    grid-column: 7 / span 2;
+    grid-row: 3 / span 1;
+}
+
+.four {
+    grid-column: 1 / span 2;
+    grid-row: 4 / span 1;
+}
+
+.five {
+    grid-column: 3 / span 2;
+    grid-row: 4 / span 1;
+}
+
+.six {
+    grid-column: 5 / span 2;
+    grid-row: 4 / span 1;
+}
+
+.plus {
+    grid-column: 7 / span 2;
+    grid-row: 4 / span 1;
+}
+
+.seven {
+    grid-column: 1 / span 2;
+    grid-row: 5 / span 1;
+}
+
+.eight {
+    grid-column: 3 / span 2;
+    grid-row: 5 / span 1;
+}
+
+.nine {
+    grid-column: 5 / span 2;
+    grid-row: 5 / span 1;
+}
+
+.minus {
+    grid-column: 7 / span 2;
+    grid-row: 5 / span 1;
+}
+
+.point {
+    grid-column: 1 / span 2;
+    grid-row: 6 / span 1;
+}
+
+.zero {
+    grid-column: 3 / span 2;
+    grid-row: 6 / span 1;
+}
+
+.equal {
+    grid-column: 5 / span 4;
+    grid-row: 6 / span 1;
+} */
+/*# sourceMappingURL=main.css.map */
